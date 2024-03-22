@@ -1,0 +1,195 @@
+.div {
+    width: 532px;
+    height: 353px;
+    position: relative;
+    border-radius: var(--br-xl);
+    background-color: var(--color-steelblue-100);
+    display: none;
+    max-width: 100%;
+  }
+  input{
+    outline: none;
+  }
+  .temperature-converter {
+    flex: 1;
+    position: relative;
+    font-weight: 800;
+    z-index: 1;
+  }
+  .temperature-converter-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 63px 0 62px;
+  }
+  .from {
+    height: 50px;
+    flex: 1;
+    position: relative;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    min-width: 123px;
+    z-index: 1;
+    font-size: 15px;
+    padding: 0px 10px;
+  }
+  .icons8-right-arrow-100-1 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .icons8-right-arrow-100-1-wrapper {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 0 0;
+    box-sizing: border-box;
+  }
+  .to {
+    height: 50px;
+    flex: 1;
+    position: relative;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    min-width: 123px;
+    z-index: 1;
+    padding: 0px 10px;
+    font-size: 15px;
+  }
+  .frame-parent,
+  .from-to-indicator {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .from-to-indicator {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .frame-parent {
+    flex-direction: column;
+    gap: 29px;
+  }
+  .but{
+    height: 50px;
+    position: relative;
+    border-radius: var(--br-3xs);
+    z-index: 1;
+    cursor: pointer;
+    color: white;
+    font-size: large;
+  }
+  .but:hover{
+    background-color: #6b74a4;
+  }
+  .value {
+    height: 50px;
+    position: relative;
+    border-radius: var(--br-3xs);
+    z-index: 1;
+    font-size: 20px;
+  }
+  .value {
+    flex: 1;
+    background-color: var(--color-white);
+    min-width: 182px;
+    border: 0;
+    outline: 0;
+    padding: 0px 15px;
+  }
+  .but {
+    width: 140px;
+    background-color: #535c91;
+  }
+  .value-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+  .result {
+    border: 0;
+    outline: 0;
+    background-color: var(--color-white);
+    align-self: stretch;
+    height:50px;
+    position: relative;
+    border-radius: var(--br-3xs);
+    z-index: 1;
+    font-size: 32px;
+    padding: 0px 10px;
+    color: black;
+    font-family: poppins;
+    text-align: center;
+    
+  }
+
+  .aligned-text {
+    text-align: space-around;
+}
+
+  .div-parent,
+  .index {
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  .div-parent {
+    width: 532px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-steelblue-100);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 25px 47px 50px;
+    gap: 34px;
+    max-width: 100%;
+  }
+  .index {
+    width: 100%;
+    position: relative;
+    background-color: #1b1a55;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    padding: 213px var(--padding-xl) 458px;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 25px;
+    color: var(--color-white);
+    font-family: var(--font-poppins);
+  }
+  @media screen and (max-width: 525px) {
+    .div-parent {
+      gap: 17px 34px;
+      padding-left: var(--padding-4xl);
+      padding-right: var(--padding-4xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .temperature-converter {
+      font-size: 20px;
+    }
+    .temperature-converter-wrapper {
+      padding-left: var(--padding-xl);
+      padding-right: var(--padding-xl);
+      box-sizing: border-box;
+    }
+    .div-parent {
+      padding-top: var(--padding-xl);
+      padding-bottom: 32px;
+      box-sizing: border-box;
+    }
+  }
+  
